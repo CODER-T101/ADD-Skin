@@ -41,12 +41,12 @@ This script automates the process of identifying, merging, and updating skin mod
 ```bash
 ├── Add_Skin.py
 ├── master.ini
-├── skins/
-│   ├── amber.ini
-│   ├── nahida.ini
-│   └── other_mods/
-│       ├── mod1.ini
-│       └── mod2.ini
+├── skins mod1/
+│   ├── mod1.ini
+├── skins mod2/
+│   ├── mod2.ini
+├── skins mod3/(Mod folder for the mod to be added)
+│   ├── mod3.ini(Mod ini to be added)
 ```
 
 ## How It Works
