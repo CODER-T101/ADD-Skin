@@ -57,7 +57,7 @@ This script automates the process of identifying, merging, and updating skin mod
 - Updates `swapvar` numbers based on the last existing number in the namespace `.ini` file.
 - Asks the user for confirmation before integrating new files.
 - **Note:** The script can merge individual mods into the namespace `.ini` file. However, it can only merge another merged mod if that mod was merged using the **GIMI Mod Toggle Script**.  
-  [GIMI Mod Toggle Script](https://gamebanana.com/tools/11165)
+  [GIMI Mod Toggle Script](https://gamebanana.com/tools/11165), In Simple terms - You can't merge 2 namespace merged mods but you can merge namespace merge mod and GIMI merged mod
 
 ---
 
