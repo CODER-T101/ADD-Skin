@@ -1,5 +1,26 @@
 import os
 import glob
+import shutil
+
+
+def create_backup(file_path):
+    try:
+        # Generate the backup file path with "DISABLED" at the start of the filename
+        base_name = os.path.basename(file_path)
+        dir_name = os.path.dirname(file_path)
+        backup_file_name = f"DISABLED_{base_name}"
+        backup_file_path = os.path.join(dir_name, backup_file_name)
+        
+        # Make a backup of the original file
+        shutil.copy(file_path, backup_file_path)
+        
+        print(f"Backup created: {backup_file_path}")
+        return backup_file_path
+    except Exception as e:
+        print(f"Error in create_backup: {e}")
+        raise
+
+
 
 def get_master_ini_file():
     try:
@@ -62,6 +83,10 @@ def get_relative_path(file_path, base_dir):
 
 def process_ini_file(new_ini_path, swapvar_value, master_ini_path, base_dir, namespace):
     try:
+        # Create backups for both master.ini and the new .ini file
+        backup_master_ini = create_backup(master_ini_path)
+        backup_new_ini = create_backup(new_ini_path)
+
         # Ensure we skip the master .ini file itself
         if os.path.abspath(new_ini_path) == os.path.abspath(master_ini_path):
             print(f"Skipping master .ini file: {new_ini_path}")
