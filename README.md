@@ -33,7 +33,7 @@ This script automates the process of identifying, merging, and updating skin mod
 1. Place the `Add_Skin` script in the folder containing **only your namespace `.ini` file** (referred to as `master.ini`) and any subfolders with skin mod `.ini` files.
 2. Run the script:
    ```bash
-   python Add_Skin.py
+   python Add_SkinV1.py
 3. Follow the on-screen prompts to include or skip new .ini files.
 4. The script will update the master.ini file with the correct namespace and swapvar values.
 
