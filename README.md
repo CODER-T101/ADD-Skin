@@ -23,6 +23,8 @@ This script automates the process of identifying, merging, and updating skin mod
 
 - **Python 3.8.1** or later
 - A basic understanding of `.ini` file configurations for **Genshin Impact** skin mods.
+- - Namespace `.ini` file (master.ini) in the same directory as the script.  
+  [Genshin Impact Namespace Tool](https://gamebanana.com/tools/15681)
 
 ---
 
