@@ -38,7 +38,7 @@ This script automates the process of identifying, merging, and updating skin mod
 4. The script will update the master.ini file with the correct namespace and swapvar values.
 
 ## File Structure Example
-'''
+```bash
 ├── Add_Skin.py
 ├── master.ini
 ├── skins/
@@ -47,7 +47,7 @@ This script automates the process of identifying, merging, and updating skin mod
 │   └── other_mods/
 │       ├── mod1.ini
 │       └── mod2.ini
-'''
+```
 
 ## How It Works
 
