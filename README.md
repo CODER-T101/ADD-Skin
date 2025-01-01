@@ -14,7 +14,10 @@ The **Add_Skin** script is a powerful tool designed to help you seamlessly manag
 - **Merging Two Namespace Merged Mods**: V1.2 introduces the ability to merge two **namespace merged mods**. Enjoy greater flexibility by combining mods that were previously merged with other namespace mods.  
 - **Folder Name Restrictions**: For error-free merging, ensure that all folder names (including subfolders) do not contain characters like `,` or `[]`.  
 - **Increased Flexibility**: With V2, the script allows for more dynamic and robust handling of mods, offering better compatibility for namespace merged mods.  
-- **Merging Requirements**: To merge **namespace merged mods**, the second **namespace merged `.ini` file** must be located in the same directory as the `master.ini` file.
+- **Merging Requirements**: At least one namespace merged ini in required.
+
+**Update**
+- now the requirement for individual mods to be in subdirectory is no longer needed
 
 ### **Version 1 (Historic)**
 
@@ -37,8 +40,8 @@ The **Add_Skin** script is a powerful tool designed to help you seamlessly manag
 
 ## 📝 Usage
 
-1. Place the `Add_Skin` script in the folder containing your **namespace `.ini` file** (referred to as `master.ini`), as well as any subfolders containing skin mod `.ini` files.
-2. **For merging two namespace merged mods**, ensure the second **namespace merged `.ini` file** is in the same directory as the script and `master.ini`.  
+1. Place the `Add_Skin` script in the folder containing your **namespace `.ini` file** (referred to as `master.ini`), as well as all the merged mod,s and individual mod,s to be merged.
+2. **For merging two namespace merged mods**, Just place the another namespace merged mod in the same directory( or in subfolder) with script and the master ini(first namespace merged ini)
 3. Make sure that **no folder names** (including subfolders) contain characters like `,` or `[]` to avoid issues.
 4. Run the script by executing the following command:  
    ```bash
